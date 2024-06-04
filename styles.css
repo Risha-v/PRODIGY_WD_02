@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@keyframes rgbBorder {
+    0% {
+      border-color: red;
+      /* transform: rotateZ(0deg); */
+    }
+    33% {
+      border-color: green;
+      /* transform: rotateZ(360deg); */
+    }
+    66% {
+      border-color: blue;
+      /* transform: rotateZ(720deg); */
+    }
+    100% {
+      border-color: red;
+      /* transform: rotateZ(1080deg); */
+    }
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    border: 5px solid transparent; /* Adjust color if desired */
+    animation: rgbBorder steps(30) 5s infinite;
+  }
+  
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.display {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #667eea;
+  font-size: 48px;
+  font-weight: 600;
+  padding: 20px;
+  margin-bottom: 30px;
+  animation: rgbBorder 5s infinite;
+}
+
+/* @keyframes rgbBorder {
+  0% {
+    border-color: red;
+  }
+  33% {
+    border-color: green;
+  }
+  66% {
+    border-color: blue;
+  }
+  100% {
+    border-color: red;
+  }
+} */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #667eea;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  height: 60px;
+  margin: 0 10px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  width: 60px;
+}
+
+button:hover {
+  background-color: #764ba2;
+}
+
+.laps {
+  text-align: left;
+  margin-left: 10px;
+  color: whitesmoke;
+}
+
+.laps h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.laps ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  color: whitesmoke;
+  font-weight: 400;
+}
