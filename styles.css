@@ -12,20 +12,16 @@ body {
 }
 @keyframes rgbBorder {
     0% {
-      border-color: red;
-      /* transform: rotateZ(0deg); */
+      border-color: red; 
     }
     33% {
-      border-color: green;
-      /* transform: rotateZ(360deg); */
+      border-color: green;   
     }
     66% {
       border-color: blue;
-      /* transform: rotateZ(720deg); */
     }
     100% {
       border-color: red;
-      /* transform: rotateZ(1080deg); */
     }
   }
   
@@ -37,7 +33,7 @@ body {
     text-align: center;
     max-width: 500px;
     width: 100%;
-    border: 5px solid transparent; /* Adjust color if desired */
+    border: 5px solid transparent; 
     animation: rgbBorder steps(30) 5s infinite;
   }
   
@@ -60,21 +56,6 @@ h1 {
   margin-bottom: 30px;
   animation: rgbBorder 5s infinite;
 }
-
-/* @keyframes rgbBorder {
-  0% {
-    border-color: red;
-  }
-  33% {
-    border-color: green;
-  }
-  66% {
-    border-color: blue;
-  }
-  100% {
-    border-color: red;
-  }
-} */
 
 .controls {
   display: flex;
